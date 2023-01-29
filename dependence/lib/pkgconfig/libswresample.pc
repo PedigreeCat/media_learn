@@ -1,0 +1,14 @@
+prefix=/home/PedigreeCat/my_projects/media_learn/dependence
+exec_prefix=${prefix}
+libdir=/home/PedigreeCat/my_projects/media_learn/dependence/lib
+includedir=/home/PedigreeCat/my_projects/media_learn/dependence/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 4.9.100
+Requires: 
+Requires.private: libavutil >= 57.44.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}

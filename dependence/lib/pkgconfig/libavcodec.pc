@@ -1,0 +1,14 @@
+prefix=/home/PedigreeCat/my_projects/media_learn/dependence
+exec_prefix=${prefix}
+libdir=/home/PedigreeCat/my_projects/media_learn/dependence/lib
+includedir=/home/PedigreeCat/my_projects/media_learn/dependence/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 59.59.100
+Requires: 
+Requires.private: libswresample >= 4.9.100, libavutil >= 57.44.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -liconv -lm -latomic -lmfuuid -lole32 -lstrmiids -lole32 -luser32 -L/mingw64/lib -lz
+Cflags: -I${includedir}

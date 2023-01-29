@@ -1,0 +1,14 @@
+prefix=/home/PedigreeCat/my_projects/media_learn/dependence
+exec_prefix=${prefix}
+libdir=/home/PedigreeCat/my_projects/media_learn/dependence/lib
+includedir=/home/PedigreeCat/my_projects/media_learn/dependence/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 59.36.100
+Requires: 
+Requires.private: libavcodec >= 59.59.100, libswresample >= 4.9.100, libavutil >= 57.44.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -lm -latomic -L/mingw64/lib -lz -lsecur32 -lws2_32
+Cflags: -I${includedir}

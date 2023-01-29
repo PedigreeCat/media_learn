@@ -1,0 +1,14 @@
+prefix=/home/PedigreeCat/my_projects/media_learn/dependence
+exec_prefix=${prefix}
+libdir=/home/PedigreeCat/my_projects/media_learn/dependence/lib
+includedir=/home/PedigreeCat/my_projects/media_learn/dependence/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 57.44.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lm -luser32 -lbcrypt -latomic
+Cflags: -I${includedir}

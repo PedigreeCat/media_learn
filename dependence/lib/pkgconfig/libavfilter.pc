@@ -1,0 +1,14 @@
+prefix=/home/PedigreeCat/my_projects/media_learn/dependence
+exec_prefix=${prefix}
+libdir=/home/PedigreeCat/my_projects/media_learn/dependence/lib
+includedir=/home/PedigreeCat/my_projects/media_learn/dependence/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 8.55.100
+Requires: 
+Requires.private: libswscale >= 6.8.112, libavformat >= 59.36.100, libavcodec >= 59.59.100, libswresample >= 4.9.100, libavutil >= 57.44.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}
