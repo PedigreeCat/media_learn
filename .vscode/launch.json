@@ -11,7 +11,7 @@
             "program": "${workspaceFolder}/src/${fileBasenameNoExtension}.exe",
             "args": [
                 "test.mp4",
-                "out.h264"
+                "out.flv"
             ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
