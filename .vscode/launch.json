@@ -11,7 +11,9 @@
             "program": "${workspaceFolder}/src/${fileBasenameNoExtension}.exe",
             "args": [
                 "test.mp4",
-                "out.flv"
+                "30_60.mp4",
+                "30",
+                "60"
             ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
